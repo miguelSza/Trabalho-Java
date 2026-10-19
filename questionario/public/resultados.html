@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resultados dos Questionários</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo"><div class="wrap">
+    <a class="voltar-link" href="/">← Voltar ao questionário</a>
+    <h1>Resultados dos Questionários</h1>
+    <p>Respostas de todos os participantes, somente dados agregados e anônimos.</p>
+    <div class="status" id="status" role="status" aria-live="polite"><i></i><span>Conectando…</span></div>
+  </div></header>
+
+  <nav class="nav-cat" id="nav-cat" aria-label="Categorias" hidden><div class="wrap" id="nav-cat-links"></div></nav>
+
+  <main class="wrap" id="resultados">
+    <noscript><p class="erro">Esta página precisa de JavaScript para exibir os gráficos.</p></noscript>
+    <p class="carregando" id="carregando">Carregando resultados…</p>
+  </main>
+
+  <script src="vendor/chart.umd.js"></script>
+  <script src="vendor/chartjs-plugin-datalabels.js"></script>
+  <script src="common.js"></script>
+  <script src="resultados.js"></script>
+</body>
+</html>
